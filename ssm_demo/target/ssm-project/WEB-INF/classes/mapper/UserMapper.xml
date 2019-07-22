@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hiynn.ssm.dao.UserMapper">
+
+    <insert id="insertUser">
+        INSERT INTO ssm_user(username,password,salt,phone_number,nickname,plaintext,is_valid,is_delete,create_time,update_time,create_by,update_by)
+        VALUES (#{username},#{password},#{salt},#{phoneNumber},#{nickname},#{plaintext},#{isValid},#{isDelete},now(),now(),null,null)
+    </insert>
+
+</mapper>
