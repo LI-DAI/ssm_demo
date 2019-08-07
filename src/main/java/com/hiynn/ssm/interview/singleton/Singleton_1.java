@@ -3,6 +3,11 @@
  */
 package com.hiynn.ssm.interview.singleton;
 
+import org.apache.commons.fileupload.util.Streams;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * @author lidai
  * @date 2019/6/18 15:09
@@ -22,5 +27,6 @@ public class Singleton_1 {
         }
         return instance;
     }
+
 }
 
